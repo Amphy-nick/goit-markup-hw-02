@@ -2,10 +2,12 @@
   --main-text-color: #212121;
   --auxiliary-text-color: #757575;
   --accent-text-color: #2196f3;
+  --main-bg-color: #ffffff;
+  --auxiliary-bg-color: #f5f4fa;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--main-bg-color);
   font-family: Roboto;
   font-style: normal;
   color: var(--main-text-color);
@@ -21,10 +23,9 @@ a {
 
 .logo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
 }
@@ -34,30 +35,36 @@ a {
 }
 
 .white-studio-logo {
-  color: #ffffff;
+  color: var(--main-bg-color);
 }
 .navigation-list-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 
-.navigation-list-item:hover,
-.navigation-list-item:focus {
+/* .current {
   color: var(--accent-text-color);
-}
+} */
 
 .contacts-list-item-header {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--auxiliary-text-color);
 }
+
+.navigation-list-item:hover,
+.navigation-list-item:focus,
 .contacts-list-item-header:hover,
-.contacts-list-item-header:focus {
+.contacts-list-item-header:focus,
+.adress-list-item:hover,
+.adress-list-item:focus,
+.contacts-list-item-footer:hover,
+.contacts-list-item-footer:focus {
   color: var(--accent-text-color);
 }
 
@@ -71,41 +78,74 @@ a {
 .hero-section-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-bg-color);
 }
-.hero-section-button {
-  background-color: #f5f4fa;
-  font-weight: bold;
+
+/* Buttons */
+
+.button {
+  background-color: var(--auxiliary-bg-color);
   font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   cursor: pointer;
 }
-.hero-section-button:hover,
-.hero-section-button:focus {
+
+.main-button {
+  font-weight: bold;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-button {
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+
+.main-button:hover,
+.main-button:focus,
+.portfolio-button:hover,
+.portfolio-button:focus {
   background-color: var(--accent-text-color);
-  color: #ffffff;
+  color: var(--main-bg-color);
 }
 
 /* Advantages-section */
+
 .section-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.advantages-section-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantages-section-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--auxiliary-text-color);
+}
+
+/* Our team section */
+
 .ourteam-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -113,28 +153,11 @@ a {
 .ourteam-position {
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--auxiliary-text-color);
 }
-.advantages-section-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-.advantages-section-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--auxiliary-text-color);
-}
-/* Potfоlio section */
-/* Our team section */
 
 /* Footer */
 
@@ -148,55 +171,30 @@ a {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.adress-list-item:hover,
-.adress-list-item:focus {
-  color: #2196f3;
+  color: var(--main-bg-color);
 }
 
 .contacts-list-item-footer {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.contacts-list-item-footer:hover,
-.contacts-list-item-footer:focus {
-  color: var(--accent-text-color);
-}
 
 /* PAGE 2 (PORTFOLIO) */
-.portfolio-page-button {
-  background-color: #f5f4fa;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  color: #212121;
-}
-
-.portfolio-page-button:hover,
-.portfolio-page-button:focus {
-  background-color: var(--accent-text-color);
-  color: #ffffff;
-}
 
 .portfolio-section-object {
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio-section-area {
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
 }
