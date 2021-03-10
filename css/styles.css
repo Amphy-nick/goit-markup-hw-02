@@ -12,9 +12,11 @@ body {
   font-style: normal;
   color: var(--main-text-color);
 }
+
 a {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
 }
@@ -37,6 +39,7 @@ a {
 .white-studio-logo {
   color: var(--main-bg-color);
 }
+
 .navigation-list-item {
   font-weight: 500;
   font-size: 14px;
@@ -75,6 +78,7 @@ a {
 .hero-section {
   background-color: #2f303a;
 }
+
 .hero-section-title {
   font-weight: 900;
   font-size: 44px;
@@ -125,6 +129,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .advantages-section-title {
   font-weight: bold;
   font-size: 14px;
@@ -132,6 +137,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .advantages-section-text {
   font-weight: normal;
   font-size: 14px;
