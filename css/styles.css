@@ -9,7 +9,6 @@
 body {
   background-color: var(--main-bg-color);
   font-family: Roboto;
-  font-style: normal;
   color: var(--main-text-color);
 }
 
@@ -25,7 +24,7 @@ a {
 
 .logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -48,9 +47,9 @@ a {
   color: var(--main-text-color);
 }
 
-/* .current {
+.current {
   color: var(--accent-text-color);
-} */
+}
 
 .contacts-list-item-header {
   font-weight: 500;
@@ -99,7 +98,7 @@ a {
 }
 
 .main-button {
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.88;
   display: flex;
   align-items: center;
@@ -123,7 +122,7 @@ a {
 /* Advantages-section */
 
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -131,7 +130,7 @@ a {
 }
 
 .advantages-section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -139,7 +138,7 @@ a {
 }
 
 .advantages-section-text {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -157,7 +156,7 @@ a {
 }
 
 .ourteam-position {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -173,16 +172,16 @@ a {
 
 .adress-list-item {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-bg-color);
 }
 
 .contacts-list-item-footer {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -192,14 +191,14 @@ a {
 /* PAGE 2 (PORTFOLIO) */
 
 .portfolio-section-object {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio-section-area {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
