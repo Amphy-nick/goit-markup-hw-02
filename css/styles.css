@@ -4,11 +4,15 @@
   --accent-text-color: #2196f3;
   --main-bg-color: #ffffff;
   --auxiliary-bg-color: #f5f4fa;
+  --main-bg-section-color: #2f303a;
+
+  --logo-font: 'Raleway', sans-serif;
+  --main-text-font: 'Roboto', sans-serif;
 }
 
 body {
   background-color: var(--main-bg-color);
-  font-family: Roboto;
+  font-family: var(--main-text-font);
   color: var(--main-text-color);
 }
 
@@ -23,7 +27,7 @@ a {
 /* Header */
 
 .logo {
-  font-family: Raleway;
+  font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -75,7 +79,7 @@ a {
 /* Hero section */
 
 .hero-section {
-  background-color: #2f303a;
+  background-color: var(--main-bg-section-color);
 }
 
 .hero-section-title {
@@ -143,6 +147,17 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--auxiliary-text-color);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 /* Our team section */
